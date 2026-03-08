@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: #3B9797;
+}
+
+h1{
+    background-color: #132440;
+    color: #fff;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;     
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.choice:hover{
+    background-color: #16476A;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;     /*pictures ka container ye hai isliye isey display krna*/
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2.8rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1.4rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 2rem;
+}
+
+#msg{
+    background-color: #16476A;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+#reset-btn{
+    background-color: #16476A;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#reset-btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px red;
+    transform: scale(1.1);
+}
